@@ -82,7 +82,7 @@ var SingleCourse = () => {
                     
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
              
-                <a style={{background: '#99e6ff', color:'buttontext',width:'100px',color:'black', height: '40px',padding:'7px 7px 7px',margin: '10px 10px 10px 10px',font:'400 18px system-ui'}} href={payLink}>Buy Now</a>
+                <a style={{background: '#99e6ff', color:'buttontext',width:'100px', height: '40px',padding:'7px 7px 7px',margin: '10px 10px 10px 10px',font:'400 18px system-ui'}} href={payLink}>Buy Now</a>
                 
                 
                 </div>
