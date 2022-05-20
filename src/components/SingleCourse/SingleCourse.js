@@ -11,7 +11,7 @@ import StarRatings from 'react-star-ratings';
 import img from "../../Images/certificate (1).png";
 import img1 from "../../Images/video.png";
 import img2 from '../../Images/folder.png';
-import ReactWhatsapp from '../../react-whatsapp';
+import ReactWhatsapp from '../../../node_modules/react-whatsapp';import ReactWhatsapp from '../../react-whatsapp';
 
 
 
