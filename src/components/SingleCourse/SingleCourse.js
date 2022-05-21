@@ -76,7 +76,7 @@ var SingleCourse = () => {
                 <h6 className="text-center">Offer by: {institute}</h6>
                 <p className='text-center'><p>Ratings: <StarRatings rating={rating} starRatedColor='gold' starEmptyColor='#000' starDimension="16px" starSpacing="1px"></StarRatings> <strong>{rating}</strong> || Total Enrolled <strong>{totalRate}</strong></p></p>
                 <p className='text-center'>Total Enrolled: {totalRate} Students</p>
-                <h5 className='text-center'>Course Fee: INR <del>22999</del> {price}</h5>
+                <h5 className='text-center'>Course Fee: INR <del>39999</del> {price}</h5>
                 <p className='text-center'><strong>Level:Beginner</strong> {lebel}</p>
                 <p>{description}</p>                                                                                                                   
                     
