@@ -44,12 +44,12 @@ var SingleCourse = () => {
     return (
         <>
 
-        <section className='container my-lg-10'>
+        <section className='container my-lg-12'>
         <div className='row'>
             {/* banner left part text */}
 
-            <div className="col-md-6 text-center pe-1 t-10;">
-            <div class="shadow-lg p-3 mb-5 mx-0 bg-white rounded">
+            <div className="col-md-6 d-flex align-items-center pe-0 t-10;">
+            <div class="shadow-lg p-25 mb-5 mx-30 align-items-center bg-white rounded">
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginBottom:"20px",marginTop:"20px",  border: "2px solid red" }}> 
             <YouTube videoId={videoId} opts={opts} onReady={onPlayerReady} />
             </div>
@@ -69,8 +69,8 @@ var SingleCourse = () => {
       
  
 
-            <div className="col-md-6 d-flex align-items-center text-center ">
-                <div class="shadow-lg p-3 mb-1 mx-5 bg-white rounded m-20 align-items-center text-center">
+            <div className="col-md-6 mb-5 d-flex align-items-center text-center ">
+                <div class="shadow-lg p-5 mb-10 mx-5 bg-white rounded  align-items-center text-center">
                 
                 <h1 className='text-decoration-underline background-red text-center'>{title}</h1>
                 <h6 className="text-center">Offer by: {institute}</h6>
