@@ -12,35 +12,31 @@ import img from "../../Images/certificate (1).png";
 import img1 from "../../Images/video.png";
 import img2 from '../../Images/folder.png';
 import ReactWhatsapp from '../../../node_modules/react-whatsapp';
+import courseData from "./../../data/fakeCourses.json"
 
-
-
-
-const onPlayerReady  = (event) => {
-  // access to player in all event handlers via event.target
-  event.target.pauseVideo();
-}
-const opts = {
-  height: '420',
-  width: '520',
-  playerVars: {
-    // https://developers.google.com/youtube/player_parameters
-    autoplay: 0,
-  },
-};
-
-
-
-var SingleCourse = () => {
-    //context data 
-    const courses = useContext(singleContext)
+const SingleCourse = () => {
+  const onPlayerReady  = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  }
+  const opts = {
+    height: '420',
+    width: '520',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+  };
+   
+    // const courses = useContext(singleContext)
     //for collect url dynamic param value
     const { id } = useParams()
+
     // match url id and fakedb courses object to render UI
-    const findMatch = courses.find(single => parseInt(id) === single.id);
+    const findMatch = courseData.find(single => parseInt(id) === single.id);
     // destruture match course
-    const { videoId, institute, title, rating, totalRate, lebel, price, description,payLink, review1, review2, review3, review4, uname1, uname2, uname3, uname4, uimg1, uimg2, uimg3, uimg4} = findMatch;
-    
+    const { title,institute, rating, totalRate, lebel, price, description,videoId, payLink, review1, review2, review3, review4, uname1, uname2, uname3, uname4, uimg1, uimg2, uimg3, uimg4} = findMatch; 
+                                                   
     return (
         <>
 
@@ -76,7 +72,7 @@ var SingleCourse = () => {
                 <h6 className="text-center">Offer by: {institute}</h6>
                 <p className='text-center'><p>Ratings: <StarRatings rating={rating} starRatedColor='gold' starEmptyColor='#000' starDimension="16px" starSpacing="1px"></StarRatings> <strong>{rating}</strong> || Total Enrolled <strong>{totalRate}</strong></p></p>
                 <p className='text-center'>Total Enrolled: {totalRate} Students</p>
-                <h5 className='text-center'>Course Fee: INR <del>39999</del> {price}</h5>
+                <h5 className='text-center'>Course Fee: INR <del>22999</del> {price}</h5>
                 <p className='text-center'><strong>Level:Beginner</strong> {lebel}</p>
                 <p>{description}</p>                                                                                                                   
                     
